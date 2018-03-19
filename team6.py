@@ -11,6 +11,9 @@ strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
+    
+    if len(their_history) == 0:
+        print ('b')
     if their_history == 'c':
         if my_score >= -10:
             print ('b')
